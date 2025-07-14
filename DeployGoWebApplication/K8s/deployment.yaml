@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gowebapp
+  labels:
+    app: gowebapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gowebapp
+  template:
+    metadata:
+      labels:
+        app: gowebapp
+    spec:
+      containers:
+      - name: gowebapp
+        image: chandra005/gowebapp
+        ports:
+        - containerPort: 8080

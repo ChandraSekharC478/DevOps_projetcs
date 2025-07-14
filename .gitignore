@@ -1,0 +1,125 @@
+# =====================================
+# General
+# =====================================
+*.log
+*.tmp
+*.swp
+*.bak
+*.old
+*.orig
+.DS_Store
+Thumbs.db
+
+# =====================================
+# Terraform
+# =====================================
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+terraform.tfvars
+*.tfvars
+*.backup
+.terraform.lock.hcl
+plan.out
+
+# =====================================
+# AWS Credentials (DO NOT COMMIT)
+# =====================================
+*.pem
+*.key
+*.crt
+.aws/
+credentials
+config
+
+# =====================================
+# Docker
+# =====================================
+*.tar
+**/Dockerfile~
+docker-compose.override.yml
+.docker/
+docker-compose*.env
+.env
+.env.*
+
+# =====================================
+# Kubernetes
+# =====================================
+*.kube/config
+kubeconfig
+.kube/
+*.yaml~
+*.yml~
+
+# =====================================
+# Helm
+# =====================================
+charts/
+values.yaml
+*.tgz
+
+# =====================================
+# Ansible
+# =====================================
+*.retry
+*.vault_pass.txt
+.hosts
+*.inventory
+*.secret
+secrets.yml
+
+# =====================================
+# CI/CD & Tools
+# =====================================
+*.zip
+*.gz
+*.bak
+*.tgz
+*.tar.gz
+*.sw?
+
+# =====================================
+# IDE/Editor configs
+# =====================================
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.iml
+*.code-workspace
+*.class
+
+# =====================================
+# Node (in case any tooling uses it)
+# =====================================
+node_modules/
+npm-debug.log
+package-lock.json
+yarn.lock
+
+# =====================================
+# Python (if scripts/tools are written in Python)
+# =====================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+pip-log.txt
+
+# =====================================
+# Go (if used in DevOps tools)
+# =====================================
+*.test
+*.out
+vendor/
+*.exe
+*.mod
+*.sum
+bin/
